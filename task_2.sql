@@ -24,10 +24,10 @@ CREATE TABLE IF NOT EXISTS Orders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATE,
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
-CREATE TABLE IF NOT EXISTS Order_details (
+CREATE TABLE IF NOT EXISTS Order_Details (
     orderdetailid INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT,
     book_id INT,
